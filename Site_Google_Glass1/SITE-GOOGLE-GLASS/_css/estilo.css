@@ -1,0 +1,313 @@
+@charset "Utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+@font-face{
+    font-family: "fonttop";
+    src: url("../_fonts/computer-font.ttf") format("truetype")
+    }
+
+	body {
+            background-color: white;
+            font-family: "arial" sans-serif;
+    }
+  
+    a {
+        text-decoration: none;
+        color: rgb(133, 133, 173);
+        font-style: italic;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: red;
+    }
+
+     header#cabecalho-artigo h1 {
+        font-family: "fonttop",sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: bolder;
+        color: rgb(133, 133, 173);
+        text-shadow: 3px 3px black;
+        margin-top: 10px;
+
+    }
+
+    header#cabecalho-artigo h4{
+        float: right;
+        display: block;
+        font-size: 12px;
+        margin-top: -20px;
+        
+    }
+
+    header#cabecalho-artigo h3{
+        color: rgb(133, 133, 173);
+        text-shadow: 1px 1px black;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+ 
+	div#interface{
+		width: 1200px;
+		margin: -10px 10px 10px 10px;
+		/*background-color: rgb(179, 255, 255);*/
+		box-shadow: 0px 0px 10px black;
+		padding: 20px;
+	}
+
+    p{
+    		color: black;
+    		text-align: justify;
+    		text-indent: 70px;
+    		text-shadow: 2px 2px white;
+    }
+
+
+    article#noticiaprincipal h2{
+        font-size: 37px;
+        background-color: rgb(50, 166, 168); 
+        color: white;
+        text-shadow: 1px 1px black;
+        font-style: italic;
+        padding-left: 20px;
+    }
+
+    header#cabecalho img#icone{
+    	position: absolute;
+    	left: 1000px;
+    	top: 60px;
+
+    }
+
+    header#cabecalho{
+        border-bottom: 2px rgb(255, 51, 51) solid;
+        height: 160px;
+        background-image: url("../_imagens/glass-logo-peq.jpg");
+        background-repeat: no-repeat;
+        background-position: 0px 110px;
+    }
+
+    header#cabecalho h1 {
+        font-family: 'Ruslan Display', cursive;
+        font-size: 45px;
+        color: blue;
+        text-shadow: 1px 1px 1px black;
+        margin: -10px;
+    }
+
+    header#cabecalho h2{
+        font-family: "arial black",sans-serif;
+        font-size: 25px;
+        color: rgb(133, 133, 173);
+        text-shadow: 1px 1px black;
+        font-style: italic;
+
+    }
+    figure.foto-legenda{
+    		position: relative;
+    		border: 5px solid blue;
+    		box-shadow: 5px 5px 10px black;
+    }
+
+    figure.foto-legenda img{
+    	width: 100%;
+    	height: 100%;
+    }
+
+    figure.foto-legenda figcaption{
+    	position: absolute;
+    	top: 0;
+    	background-color: rgba(0,0,0,.4);
+    	color: white;
+    	width: 100%;
+    	height: 100%;
+    	text-align: auto;
+    	padding-left: 30px;
+    	box-sizing: border-box;
+    	font-size: 30px;
+    	opacity: 0;
+    	transition: opacity 1s
+    }
+
+    figure.foto-legenda:hover figcaption{
+    	opacity: 1
+    }
+
+    nav#menu ol{
+    	list-style: none;
+    	text-transform: uppercase;
+    	position: absolute;
+    	top: -20px;
+		right: 0px;
+		/*margin-top: -10px;*/
+    }
+
+    nav#menu li{
+    	display: inline-block;
+    	background-color: rgb(50, 166, 168);
+    	color: black;
+    	padding: 10px;
+    	margin: 4px;
+    	transition: background-color 1s;
+    	-webkit-transition: background-color 1s;
+    	-o-transition: background-color 1s;
+    
+    }
+
+    nav#menu li:hover {
+    	background-color: rgb(148, 148, 184);
+
+    }
+
+	nav#menu{
+		display: block;
+		
+	}
+
+	nav#menu a{
+		text-decoration: none;
+		color: black;
+		text-shadow: 1px 1px white;
+	}
+
+	nav#menu h1{	
+		display: none;
+	}
+
+	nav#menu a:hover{
+		color: white;
+
+	}
+
+    section#corpo{
+        display: block;
+        width: 650px;
+        float: left;
+        border-right: 2px rgb(255, 51, 51) solid;
+        padding-right: 40px;
+
+    }
+
+    table#tabela{
+        color: black;
+        border: 2px solid black;
+        border-spacing: 0px;
+        margin-left: auto;
+        margin: auto;
+        
+    }
+
+    table#tabela caption{
+        color: black;
+        text-shadow: 1px 1px rgb(179, 198, 255);
+        font-weight: bolder;
+    }
+
+    table#tabela caption span{
+        display: block; /*bloco flutuante desconecta do texto*/
+        float: right;
+        color: black;
+        font-weight: bolder;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    table#tabela td{
+        border: 2px solid rgb(102, 102, 153);
+        padding: 20px;
+
+    }
+
+    table#tabela td.ce{
+        vertical-align: top;
+        color: white;
+        text-shadow: 1px 1px black; 
+        background-color: rgb(102, 140, 255);
+
+    }
+
+    table#tabela td.cd{
+        vertical-align: left;
+        text-shadow: 1px 1px black;
+        color: white;
+        background-color: rgb(194, 194, 214);
+
+    }
+
+
+    aside#lateral{
+        margin-top: 10px;
+        box-shadow: 5px 5px 10px black;
+        padding: 27px;
+        display: block;
+        width: 420px;
+        float: right;
+        padding-right: 40px;
+        background-color: rgb(255, 255, 179);
+
+    }
+
+    aside#lateral h1{
+        font-style: italic;
+        font-size: 40px;
+        color: rgb(133, 133, 173);
+        font-family: "fonttop",sans-serif;
+        text-shadow: 3px 3px black;
+
+    }
+
+    aside#lateral h2{
+        font-size: 37px;
+        background-color: rgb(50, 166, 168); 
+        color: white;
+        text-shadow: 1px 1px black;
+        font-style: italic;
+        padding-left: 20px;
+    }
+
+    aside#lateral p{
+        color: black;
+        text-align: justify;
+        text-indent: 70px;
+        text-shadow: 2px 2px white;
+
+    }
+
+    footer#rodape{
+        clear: both;
+        border-top: 2px rgb(255, 51, 51) solid;
+        text-align: center; 
+        line-height: 1.8;
+
+    }
+
+    footer#rodape a{
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+    }
+
+    footer#rodape a:hover{
+        text-decoration: underline;
+        color: red;
+    }
+  
+    footer#rodape #twitterimg{
+        position: relative;
+        width: 55px;
+        top: 95px;
+        left: 95px;
+           
+    }
+
+    footer#rodape #facebookimg{
+       position: relative;
+       width: 50px; 
+       left: -95px;
+       top: 95px;
+    }   
+
+
+   
+
